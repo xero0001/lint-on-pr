@@ -13,7 +13,7 @@ env:
 jobs:
   linting:
     name: Linting before merge
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Install NodeJS
         uses: actions/setup-node@v2
