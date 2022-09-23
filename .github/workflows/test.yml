@@ -1,11 +1,6 @@
-name: Lint on Pull Request
+name: Shell Commands
 
-on:
-  pull_request:
-    branches:
-      - main
-      - develop
-      - feature/*
+on: [push]
 
 env:
   NODE_VERSION: 10

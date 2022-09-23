@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "echo LINTING"
+    "lint": "echo 'Linting'"
   },
   "repository": "https://github.com/xero0001/lint-on-pr.git",
   "author": "ARAIS <xero0001@naver.com>",
