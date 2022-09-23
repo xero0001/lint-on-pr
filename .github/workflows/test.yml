@@ -2,6 +2,9 @@ name: Shell Commands
 
 on: [push]
 
+env:
+  NODE_VERSION: 10
+
 jobs:
   linting:
     name: Linting before merge
