@@ -3,13 +3,14 @@ name: Shell Commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  linting:
+    name: Linting before merge
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello World"
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
-      - name: multiline script
-        run: |
-          node -v
-          npm install
+      - name: Checkout
+        uses: actions/checkout@v1
