@@ -23,3 +23,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: yarn
+
+      - name: Linting
+        run: yarn lint
